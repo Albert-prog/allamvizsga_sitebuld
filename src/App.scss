@@ -1,0 +1,64 @@
+body {
+  background-color: hsla(39, 84%, 53%, 0.884);
+  color: lightseagreen;
+  font-family: "Roboto";
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 40%;
+  margin: 50px auto;
+
+  h1 {
+    text-align: center;
+  }
+  .checkbox {
+    text-align: center;
+    font-size: large;
+    span {
+      text-decoration: underline;
+    }
+  }
+  input {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid lightseagreen;
+    color: lightseagreen;
+  }
+  ::placeholder {
+    color: lightseagreen;
+    letter-spacing: 1px;
+  }
+
+  button {
+    color: white;
+    background-color: lightseagreen;
+    width: 300px;
+    margin: 10px auto;
+    padding: 20px 40px;
+    border: 1px solid white;
+    letter-spacing: 3px;
+  }
+
+  .menuBtn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    background-color: lightseagreen;
+    font-size: 1.5rem;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .App {
+    max-width: 80%;
+    h1 {
+      text-align: right;
+      margin-top: 60px;
+    }
+  }
+}

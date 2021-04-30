@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './src/App.css';
+import DehazeIcon from '@material-ui/icons/Dehaze';
+import { styled } from '@material-ui/core/styles';
+
+const MyIcon = styled(DehazeIcon)({
+  height: 48,
+  width: 48,
+  padding: 15,
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <MyIcon className="menuBtn"/>
+      </nav>
+      <h1>Jelentkezés</h1>
+      <input type="text" placeholder="Név"></input>
+      <input type="email" placeholder="Email cím"></input>
+      <input type="number" placeholder="Telefonszám"></input>
+      <div className="checkbox">
+      <input type="checkbox"></input>
+        <label>Elovastam és elfogadtam az <span>Adatkezelési Tájékoztatót</span></label>
+      </div>
+      <button>Elküld</button>
     </div>
   );
 }
